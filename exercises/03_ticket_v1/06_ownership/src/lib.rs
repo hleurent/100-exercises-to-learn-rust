@@ -34,16 +34,19 @@ impl Ticket {
         }
     }
 
-    pub fn title(self) -> String {
-        self.title
+    pub fn title(&self) -> &String {
+        let res = &self.title;
+        return res
     }
 
-    pub fn description(self) -> String {
-        self.description
+    pub fn description(&self) -> &String {
+        let res = &self.description;
+        return res
     }
 
-    pub fn status(self) -> String {
-        self.status
+    pub fn status(&self) -> &String {
+        let res = &self.status;
+        return res
     }
 }
 
